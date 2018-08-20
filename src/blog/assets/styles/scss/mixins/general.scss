@@ -1,0 +1,36 @@
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+
+@mixin font($w: normal, $s: 12, $x:24, $font: $font) {
+    font: $w ($s * 1.333333)+px / $x+px $font;
+}
+
+@mixin top($x) {
+    top: $x;
+}
+
+@mixin left($x) {
+    left: $x;
+}
+
+@mixin right($x) {
+    right: $x;
+}
+
+@mixin bottom($x) {
+    bottom: $x;
+}
+
+@mixin transform($x, $y) {
+    transform: translate($x, $y);
+}
+
+@mixin transformY($x) {
+    transform: translateY($x);
+}
+
+@mixin transformX($x) {
+    transform: translateX($x);
+}

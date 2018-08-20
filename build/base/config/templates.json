@@ -1,0 +1,6 @@
+[{
+    "template": "src/base/templates/index.pug",
+    "filename": "./index.html",
+    "inject": true,
+    "title": "Index"
+}]

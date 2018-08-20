@@ -1,0 +1,46 @@
+.btn {
+    @include font-size(1.2);
+    @media screen and (min-width: 360px) {
+        @include font-size(1.6);
+    }
+    padding-top: 7px;
+    padding-bottom: 7px;
+    position: relative;
+    &--prev,
+    &--next {
+        .fa {
+            position: absolute;
+            top: 48%;
+            @include font-size(2.5);
+            @media screen and (min-width: 360px) {
+                @include font-size(3);
+            }
+        }
+    }
+    &--prev {
+        background: #b34745;
+        .fa {
+            left: 10px;
+            transform: translate(0, -50%);
+        }
+        &:hover {
+            .fa {
+                left: 5px;
+                transition: right .3s;
+            }
+        }
+    }
+    &--next {
+        background: #507432;
+        .fa {
+            right: 10px;
+            transform: translate(0, -50%);
+        }
+        &:hover {
+            .fa {
+                right: 5px;
+                transition: right .3s;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+extends ./../../base-pug/base
+block append config
+  - page_title = self.htmlWebpackPlugin.options.title;;
+  - page = "Test";
+
+block header
+  include ./includes/header
+block body
+  include ./layouts/index
+block footer
+  include ./includes/footer

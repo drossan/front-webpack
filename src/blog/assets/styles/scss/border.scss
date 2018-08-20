@@ -1,0 +1,20 @@
+.border {
+    &--left {
+        border-left: 1px solid #000;
+    }
+    &--right {
+        border-right: 1px solid #000;
+    }
+    &--bottom {
+        border-bottom: .5px solid #000;
+    }
+    &--1 {
+        border: .5px solid;
+    }
+    &--white {
+        border-color: white;
+    }
+    &--black {
+        border-color: black!important;
+    }
+}

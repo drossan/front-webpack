@@ -1,0 +1,28 @@
+.navbar-nav {
+    .nav-item {
+        color: #000 !important;
+        padding-left: 0;
+        font-size: 16px !important;
+        line-height: 25px !important;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        @media (max-width: 992px) {
+            border-bottom: 1px solid #000;
+            .nav-link {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        max-width: 80%;
+        float: right;
+        width: 100%;
+    }
+}
+.form-control,
+.custom-select {
+    border-color: #000!important;
+    border-radius: 0!important;
+    color: #000!important;
+    height: 30px!important;
+}

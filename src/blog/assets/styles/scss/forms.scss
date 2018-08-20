@@ -1,0 +1,31 @@
+.form {
+    &--noborder {
+        .form-control,
+        .custom-select {
+            border: none;
+            border-bottom: 1px solid #000;
+            padding-left: 0;
+            &.focus,
+            &:hover,
+            &:active {
+                color: #000;
+                background-color: #fff;
+                border-color: none;
+                box-shadow: none;
+            }
+        }
+        .fa {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            padding-right: 10px;
+            @include font-size(2);
+            transform: translate(0, -50%);
+        }
+    }
+    &-search {
+        border: none;
+        height: 50px;
+        padding-left: 15px;
+    }
+}

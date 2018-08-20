@@ -1,0 +1,15 @@
+.tag {
+    padding: 5px 15px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 35px;
+    &--primary {
+        background: $primary;
+    }
+    &--top {
+        &-inherit {
+            top: inherit !important;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.card {
+    .tag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, -100%);
+        padding: 0 15px;
+        border-radius: 0 10px 0 0;
+    }
+    &:hover {
+        .swiper-bg-hover {
+            height: 100%;
+            transition: height .3s;
+            &-a {
+                visibility: visible;
+                opacity: 1;
+                transition: visibility .3s, opacity .5s linear;
+                &:hover {
+                    color: $primary;
+                    transition: color .8s;
+                }
+            }
+        }
+    }
+    &-header {
+        border: none;
+        padding: 0;
+        >.card--img {
+            top: 25px;
+            >img {
+                padding: 10px;
+                background-color: white;
+            }
+        }
+    }
+}

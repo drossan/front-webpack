@@ -1,0 +1,16 @@
+.footer{
+	background: #9a9389;
+	.list-social{
+		width: 100%;
+		padding: 10px 15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: linear-gradient(90deg, #fb8d2c,#423587);
+		margin: 0;
+	} 
+
+	.fa {
+		color: #fff;
+	}
+}

@@ -1,0 +1,51 @@
+header.header.navbar.navbar-expand-lg.navbar-light.fixed-top.p-sm-4
+  a.navbar-brand.p-sm-2(href='/')
+    img.img-fluid(src='https://www.covadenxoroi.com/m/assets/img/logo.png', alt="COVA D'EN XOROI", width='70px')
+  .col.d-lg-none.w-min-130
+    .row
+      p.text.text--bold.w-100 CLUB MUSICAL
+      p.text.text--semibold.text--italic.w-100 Sólo servimos bebidas
+      p.text.text--light.text--italic.w-100 Evite colas comprando en nuestra web
+  .col.w-max-50
+    .row
+      .dropdown.d-lg-none.border--left
+        button#dropdownMenu2.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | ES
+        .dropdown-menu(aria-labelledby='dropdownMenu2')
+          button.dropdown-item.active(type='button') ES
+          button.dropdown-item(type='button') IN
+          button.dropdown-item(type='button') CT
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
+    span.fa.fa-bars.fa-3x.text--black
+    p.text.text--12.text--semibold.text--black MENÚ
+  #navbarText.collapse.navbar-collapse
+    .col.d-none.d-lg-inline
+      p.text.text--12.text--bold CLUB MUSICAL
+      p.text.text--12.text--semibold.text--italic Sólo servimos bebidas
+      p.text.text--12.text--light.text--italic Evite colas comprando en nuestra web
+    ul.navbar-nav.mr-auto
+      li.nav-item(class="<%if(active == 'home'){%>active<%}%>")
+        a.nav-link.text(href='sa_cova.html')
+          | SA COVA 
+          span.sr-only
+      li.nav-item(class="<%if(active == 'dia'){%>active<%}%>")
+        a.nav-link.text(href='/dia.html') DIA
+      li.nav-item(class="<%if(active == 'tarde'){%>active<%}%>")
+        a.nav-link.text(href='/tarde.html') SUNSET & LIVE SESSIONS
+      li.nav-item(class="<%if(active == 'noche'){%>active<%}%>")
+        a.nav-link.text(href='/noche.html') NIGHT SESSIONS
+      li.nav-item(class="<%if(active == 'vip'){%>active<%}%>")
+        a.nav-link.text(href='/vip.html') VIP
+      li.nav-item(class="<%if(active == 'horarios'){%>active<%}%>")
+        a.nav-link.text(href='horarios.html') HORARIOS
+      li.nav-item(class="<%if(active == 'contacto'){%>active<%}%>")
+        a.nav-link.text(href='#') CONTACTO
+      li.nav-item(class="<%if(active == 'trabaja'){%>active<%}%>")
+        a.nav-link.text(href='#') TRABAJA CON NOSOTROS
+      li.nav-item.dropdown.d-none.d-lg-block
+        a#navbarDropdown.nav-link.text.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | ES
+        .dropdown-menu(aria-labelledby='navbarDropdown')
+          a.dropdown-item.active(href='#') ES
+          a.dropdown-item(href='#') IN
+          a.dropdown-item(href='#') CT
