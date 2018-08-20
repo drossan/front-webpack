@@ -1,6 +1,5 @@
 #!/urs/bin/env node
 
-var path = require('path');
 const fs = require('fs-extra')
 const [, , ...args] = process.argv
 
