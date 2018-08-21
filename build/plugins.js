@@ -51,7 +51,7 @@ const DuplicatePackageCheckerPlugin = new _DuplicatePackageCheckerPlugin();
 
 
 const ga = new _HtmlWebpackPartialsPlugin({
-    path: 'src/inc/analytics.html',
+    path: 'src/_common/inc/analytics.html',
     location: 'head',
     priority: 'high',
     options: {
@@ -60,7 +60,7 @@ const ga = new _HtmlWebpackPartialsPlugin({
 });
 
 const yandex = new _HtmlWebpackPartialsPlugin({
-    path: 'src/inc/yandex.html',
+    path: 'src/_common/inc/yandex.html',
     location: 'head',
     priority: 'high',
     options: {

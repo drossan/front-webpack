@@ -1,7 +1,10 @@
-extends ./../../base-pug/base
+extends ./../../_common/base-pug/base
 block append config
   - page_title = self.htmlWebpackPlugin.options.title;;
   - page = "Test";
+  include ./mixins/mixins
+block append head
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css')
 
 block header
   include ./includes/header

@@ -1,6 +1,7 @@
 const loaders = require('./loaders');
 const plugins = require('./plugins');
 const optimization = require('./optimization');
+const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const proyecto = plugins.proyecto;
@@ -9,6 +10,7 @@ const config = require('./../src/' + proyecto + '/config/config');
 const templates = require('./../src/' + proyecto + '/config/templates.json');
 
 const webpack = {
+    context: path.resolve(__dirname, './../src/' + proyecto),
     entry: config.entry,
     module: {
         rules: [
@@ -26,7 +28,7 @@ const webpack = {
         templates.filter((e) => {
             pl.push(
                 new HtmlWebPackPlugin({
-                    template: e.template,
+                    template: 'templates/' + e.template,
                     filename: e.filename,
                     inject: e.inject,
                     title: e.title
@@ -35,14 +37,16 @@ const webpack = {
         })
         pl.push(
             plugins.MiniCssExtractPlugin,
-            plugins.ga,
-            plugins.yandex,
-            plugins.BundleAnalyzerPlugin,
             plugins.CompressionPlugin,
             plugins.ProvidePlugin,
             plugins.FriendlyErrorsWebpackPlugin,
             plugins.DuplicatePackageCheckerPlugin
         );
+
+        config.options.BundleAnalyzerPlugin ? pl.push(plugins.BundleAnalyzerPlugin) : false;
+        config.options.ga ? pl.push(plugins.ga) : false;
+        config.options.yandex ? pl.push(plugins.yandex) : false;
+
         return pl;
     }()),
     output: config.output
