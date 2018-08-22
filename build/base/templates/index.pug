@@ -5,9 +5,9 @@ block append config
 
 block head
   include ./includes/head
-block header
-  include ./includes/header
 block body
+  block header
+    include ./includes/header
   include ./layouts/index
 block footer
   include ./includes/footer

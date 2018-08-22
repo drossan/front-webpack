@@ -1,6 +1,9 @@
 .bg {
     background: #eeeeee;
     &--white {
-        background: #fff;
+        background: $white;
+    }
+    &--dark {
+        background: $dark;
     }
 }

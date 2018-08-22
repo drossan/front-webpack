@@ -1,17 +1,23 @@
 +breadcrumb('breadcrumb', [{title: 'Últimos post', active: true}])
-.row
-  .col-12
-    .row
-      .card.border--top-primary.text--cursor.h-100
-        .card-body.position-relative.p-0
-          .row
-            .col-12.col-md-6
-              .position-relative.w-100.h-100
-                img.card-img-top.h-100(src='https://picsum.photos/370/250/?image=30', alt='Card image cap')
-                a.text.text--link.text--white.text--semibold.swiper-bg-hover-a(href='#') Leer más
-                .swiper-bg.swiper-bg-hover.d-flex
-                span.tag.tag--primary.tag--top-inherit.text--white Etiqueta
-            .col-12.col-md-6
-              p.text.text--20.text--semibold.my-4 Títular
-              p.text.text--12.text--light.mb-4
-                | Han pasado 40 años y casi no nos hemos dado ni cuenta. Nuestro mundo y el tuyo es muy diferente. Conoce cómo hemos cambiado en estas cuatro décadas...
++card-12([
+	{
+		image: 30,
+		title: 'Titular 1',
+		text: 'Han pasado 40 años y casi no nos hemos dado ni cuenta. Nuestro mundo y el tuyo es muy diferente. Conoce cómo hemos cambiado en estas cuatro décadas...'
+	},
+	{
+		image: 40,
+		title: 'Titular 2',
+		text: 'Han pasado 40 años y casi no nos hemos dado ni cuenta. Nuestro mundo y el tuyo es muy diferente. Conoce cómo hemos cambiado en estas cuatro décadas...'
+	},
+	{
+		image: 50,
+		title: 'Titular 3',
+		text: 'Han pasado 40 años y casi no nos hemos dado ni cuenta. Nuestro mundo y el tuyo es muy diferente. Conoce cómo hemos cambiado en estas cuatro décadas...'
+	},
+	{
+		image: 60,
+		title: 'Titular 4',
+		text: 'Han pasado 40 años y casi no nos hemos dado ni cuenta. Nuestro mundo y el tuyo es muy diferente. Conoce cómo hemos cambiado en estas cuatro décadas...'
+	}
+])

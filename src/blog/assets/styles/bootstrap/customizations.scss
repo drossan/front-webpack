@@ -1,16 +1,17 @@
-// Customize variables
-// This gets loaded after bootstrap/variables is loaded, so you can refer to
-// bootstrap variables configured by bootstrap. For example, the _variables.scss contains:
-// $btn-primary-bg: $brand-primary !default;
-// Here we're adjusting the hue of that default:
-//$btn-primary-bg: adjust-hue($btn-primary-bg, +20deg);
-// NOTE: $gray-dark is defined in _variables.scss
-//$body-bg: $gray-light;
-// Basics of a navbar
 @import "./../scss/variables.scss";
+// Navs
+$nav-link-disabled-color: $white !default;
+$nav-tabs-border-color: $white !default;
+$nav-tabs-link-active-color: $white !default;
+$nav-divider-color: $white !default;
 .navbar-nav {
+    align-items: center;
+    justify-content: flex-end;
+    .nav-link {
+        color: $white!important;
+    }
     .nav-item {
-        color: #000!important;
+        color: $white!important;
         padding-left: 0;
         font-size: 16px !important;
         line-height: 20px !important;
@@ -21,23 +22,17 @@
         }
         &.active {
             .nav-link {
-                color: $primary;
+                color: $white!important;
                 font-weight: 800;
                 border-bottom: 1px solid $primary;
             }
         }
-    }
-    @media (max-width: 992px) {
-        max-width: 80%;
-        float: right;
-        width: 100%;
     }
 }
 
 .form-control {
     border-color: #000;
     border-radius: 0;
-    color: #000;
 }
 
 .page-link {

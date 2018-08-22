@@ -5,3 +5,21 @@ mixin breadcrumb(id, ...items)
                 each obj in items
                     each item in obj
                         li.breadcrumb-item.text.text--12(class=item.active ? "active" : false, aria-current='page')= item.title
+mixin card-12(...items)
+    each obj in items
+        each item in obj
+            .row.my-4
+                .col-12
+                    .row
+                        .card.border--top-primary.text--cursor.h-100
+                            .card-body.position-relative.p-0
+                                .row
+                                    .col-12.col-md-6
+                                        .position-relative.w-100.h-100
+                                            img.card-img-top.h-100(src='https://picsum.photos/370/250/?image=' + item.image, alt='Card image cap')
+                                            a.text.text--link.text--white.text--semibold.swiper-bg-hover-a(href='#') Leer más
+                                            .swiper-bg.swiper-bg-hover.d-flex
+                                            span.tag.tag--primary.tag--top-inherit.tag--bottom.text--white Etiqueta
+                                    .col-12.col-md-6
+                                        p.text.text--20.text--semibold.my-4= item.title
+                                        p.text.text--12.text--light.mb-4= item.text

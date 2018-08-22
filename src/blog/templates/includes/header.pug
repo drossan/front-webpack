@@ -1,26 +1,22 @@
-header.header.navbar.navbar-expand-lg.navbar-light.w-100.d-none.d-lg-flex.align-items-center.justify-content-center.border--bottom.py-5
-  a.navbar-brand(href='/')
-    img.img-fluid(src='https://www.revistaantropika.com/assets/images/logo.svg', alt="COVA D'EN XOROI", width='70px')
-header.header.navbar.navbar-expand-lg.navbar-light.p-sm-4
-  a.navbar-brand.d-inline.d-lg-none.p-sm-2(href='/')
-    img.img-fluid(src='https://www.revistaantropika.com/assets/images/logo.svg', alt="COVA D'EN XOROI", width='50px')
-  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-    p.text.text--12.text--semibold.text--black MENÚ
-  #navbarText.collapse.navbar-collapse
-    ul.navbar-nav.mx-auto
-      li.nav-item.dropdown.px-3(class="<%if(active == 'home'){%>active<%}%>")
-        a#navbarDropdown.nav-link.text.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-          | CONTENIDOS
-        .dropdown-menu(aria-labelledby='navbarDropdown')
-          a.text.text--12.dropdown-item.active(href='#') TODOS
-          a.text.text--12.dropdown-item(href='#') OPINIÓN
-          a.text.text--12.dropdown-item(href='#') CINE
-      li.nav-item.px-3(class="<%if(active == 'dia'){%>active<%}%>")
-        a.nav-link.text.text--12.text--semibold(href='/dia.html') NOTICIAS
-      li.nav-item.px-3(class="<%if(active == 'tarde'){%>active<%}%>")
-        a.nav-link.text.text--12.text--semibold(href='/tarde.html') VÍDEOS
-      li.nav-item.px-3(class="<%if(active == 'noche'){%>active<%}%>")
-        a.nav-link.text.text--12.text--semibold(href='/noche.html') NOSOTROS
-      li.nav-item.px-3(class="<%if(active == 'vip'){%>active<%}%>")
-        a.nav-link.text.text--12.text--semibold(href='/vip.html') REVISTA
+header.header.navbar.navbar-expand-lg.p-sm-4.bg--dark
+	a.navbar-brand.p-sm-2(href='/')
+		img.img-fluid(src='https://www.revistaantropika.com/assets/images/logo.svg', alt="COVA D'EN XOROI", width='50px')
+	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
+		span.navbar-toggler-icon.text--white
+		p.text.text--12.text--semibold.text--white MENÚ
+	#navbarText.collapse.navbar-collapse
+		ul.navbar-nav.w-100.aling-items-center.justify-content-end
+			li.nav-item.dropdown.px-3.d-flex.align-items-center(class="")
+				a#navbarDropdown.nav-link.text.dropdown-toggle.order-2(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') CONTENIDOS
+				.dropdown-menu(aria-labelledby='navbarDropdown')
+					a.text.text--white.text--12.dropdown-item.active(href='#') TODOS
+					a.text.text--white.text--12.dropdown-item(href='#') OPINIÓN
+					a.text.text--white.text--12.dropdown-item(href='#') CINE
+			li.nav-item.px-3(class="")
+				a.nav-link.text.text--12.text--white.text--semibold(href='') NOTICIAS
+			li.nav-item.px-3(class="")
+				a.nav-link.text.text--12.text--white.text--semibold(href='') VÍDEOS
+			li.nav-item.px-3(class="")
+				a.nav-link.text.text--12.text--white.text--semibold(href='') NOSOTROS
+			li.nav-item.px-3(class="")
+				a.nav-link.text.text--12.text--white.text--semibold(href='') REVISTA
