@@ -21,10 +21,15 @@
     &--primary{
         border-color: $primary 
     }
+    &--second{
+        border-color: $second 
+    }
+
     &--white {
         border-color: white;
     }
     &--black {
         border-color: black!important;
     }
+    @include borders(map-keys($colors-app)...);
 }

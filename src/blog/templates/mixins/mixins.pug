@@ -1,10 +1,11 @@
-mixin breadcrumb(id, ...items)
+mixin breadcrumb(id, border, ...items)
     .row.pt-5
-        nav.w-100(aria-label=id)
+        nav.w-100.border--top(class='border--' + border, aria-label=id)
             ol.breadcrumb.bg-white.py-4
                 each obj in items
                     each item in obj
                         li.breadcrumb-item.text.text--12(class=item.active ? "active" : false, aria-current='page')= item.title
+
 mixin card-12(...items)
     each obj in items
         each item in obj

@@ -7,30 +7,27 @@
     font: $w ($s * 1.333333)+px / $x+px $font;
 }
 
-@mixin top($x) {
-    top: $x;
+
+@mixin bg($colors...){
+    @for $i from 1 through length($colors) {
+        .bg--#{nth($colors,$i)}{
+            background-color: map-get($colors-app, nth($colors,$i));
+        }
+    }
 }
 
-@mixin left($x) {
-    left: $x;
+@mixin text($colors...){
+    @for $i from 1 through length($colors) {
+        .text--#{nth($colors,$i)}{
+            color: map-get($colors-app, nth($colors,$i));
+        }
+    }
 }
 
-@mixin right($x) {
-    right: $x;
-}
-
-@mixin bottom($x) {
-    bottom: $x;
-}
-
-@mixin transform($x, $y) {
-    transform: translate($x, $y);
-}
-
-@mixin transformY($x) {
-    transform: translateY($x);
-}
-
-@mixin transformX($x) {
-    transform: translateX($x);
+@mixin borders($colors...){
+    @for $i from 1 through length($colors) {
+        .border--#{nth($colors,$i)}{
+            border-color: map-get($colors-app, nth($colors,$i));
+        }
+    }
 }

@@ -6,7 +6,7 @@
     &--dark {
         background: $dark;
     }
-    
+    @include bg(map-keys($colors-app)...);
     &--cover {
         background: linear-gradient(90deg, rgba(17, 241, 223, 0.15) 10%, rgba(63, 81, 181, 0.15) 90%);
         width: 100vw;

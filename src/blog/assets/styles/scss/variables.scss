@@ -1,15 +1,37 @@
+// Fonts
 $font: 'Open Sans', sans-serif;
 
+
+$colors-app: (
+    primary: #11f1dfcc,
+    second: #3f51b58f,
+    opinion: #2077BE,
+    arte: #416A8B,
+    ciencia:#F36C4E,
+    entrevistas: #BE2620,
+    colectivos: #53C65B,
+    reportajes:#F1DC10,
+    ficciones:#BE3154,
+    relatos:#75C664,
+    recomendaciones:#F15226,
+    otros:#BEB931
+);
+
+// Colores primarios
 $primary: #11f1dfcc;
 $second: #3f51b58f;
+
+// Colores básicos
 $white: #fff;
 $dark: #292d39;
 
-$base_url: 'C:/xampp_7/htdocs/www/front-webpack-github/dist/assets/';
-
-
+// Colores Redes
 $facebook: #4267b2;
 $twitter: #1DA1F2 ;
 $tumblr: #444444 ;
 $github: #24292e;
 $youtube: #ff0000;
+
+// Base para assets
+$base_url: 'C:/xampp_7/htdocs/www/front-webpack-github/dist/assets/';
+
