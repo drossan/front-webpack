@@ -74,4 +74,36 @@
     &--black {
         color: #000;
     }
+    &--dark {
+        color: $dark;
+    }
+}
+/* a:hover {
+    background: linear-gradient(0deg, $primary 10%, $second 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.fab {
+    padding: 5px;
+}
+.fa-facebook-f:hover{
+    color: $facebook;
+}
+.fa-twitter:hover{
+    color: $twitter;
+}
+.fa-tumblr:hover{
+    color: $tumblr;
+}
+.fa-github:hover{
+    color: $github;
+}
+.fa-youtube:hover{
+    color: $youtube;
+}
+.fa-instagram:hover{
+    border-radius: 5px;
+    color: white!important;
+    background: linear-gradient(0deg, #f9ed32 10%, #ee2a7b 90%);
 }

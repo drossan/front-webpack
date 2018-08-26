@@ -3,4 +3,10 @@
     "filename": "./index.html",
     "inject": true,
     "title": "Index"
+},
+{
+    "template": "index-2.pug",
+    "filename": "./index-2.html",
+    "inject": true,
+    "title": "Index"
 }]

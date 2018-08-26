@@ -1,50 +1,24 @@
 $(function() {
-    new Swiper('#news-carousel > .swiper-container', {
-        slidesPerView: 5,
-        slidesPerColumn: 1,
-        spaceBetween: 1,
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            1268: {
-                slidesPerView: 3,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            640: {
-                slidesPerView: 1,
-            },
-            320: {
-                slidesPerView: 1,
-            }
-        }
+    var offset = 250;
+
+    // Para header index.html
+    $(window).scroll( () =>  $(this).scrollTop() > offset 
+        ? $('.nav-fixed-desktop').addClass('nav-fixed-desktop--reduce') 
+        : $('.nav-fixed-desktop').removeClass('nav-fixed-desktop--reduce') 
+    );
+
+    $('#down').click(function (e) {
+        e.preventDefault()
+        let point = $("#"+ $(this).data('down'));
+        $('html,body').animate({scrollTop: $(point).offset().top - 80},'slow');
     })
 
-    new Swiper('#news-carousel-cards > .swiper-container', {
-        slidesPerView: 4,
-        spaceBetween: 5,
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            1260: {
-                slidesPerView: 3,
-            },
-            1024: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            320: {
-                slidesPerView: 1,
-            }
-        }
-    })
+
+    // Para header 2
+    var offset2 = 150;
+    $(window).scroll( () =>  $(this).scrollTop() > offset2 
+    ? $('.header-fixed').addClass('header-fixed--top') 
+    : $('.header-fixed').removeClass('header-fixed--top') 
+);
+    
 })

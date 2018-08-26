@@ -1,7 +1,31 @@
+.nav-fixed-desktop{
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(90deg, #11f1dfcc 10%, #3f51b58f 90%);
+    // background: #ffffff75;
+    z-index: 99;
+    #logo {
+        width: 200px;
+        transition: width .5s;
+    }
+    .nav-link {
+        color: white;
+        font-weight: 400;
+    }
+    &--reduce{
+        background-color: #fff;
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+        #logo {
+            width: 125px;
+            transition: width .5s;
+        }
+    }
+}
 .header {
-    border-bottom: 1px solid $white;
+
+    border-bottom: 1px solid black;
     position: relative;
-    color: $white;
     &.navbar {
         padding: 0.5rem;
         .navbar-brand {
@@ -28,6 +52,7 @@
         max-width: 50px;
         padding: 0.25rem 0.50rem;
     }
+
     .navbar-collapse {
         @media screen and (max-width: 992px) {
             position: absolute;
@@ -39,4 +64,28 @@
             min-height: 100vh;
         }
     }
+    &-fixed{
+        &--top{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+        }
+        #navbarText {
+            .nav-item {
+                height: 60px;
+                .nav-link{
+                    display: flex;
+                    align-items: center;
+                    height: 60px;
+                    color: $white;
+                }
+                &.active,
+                &:hover{
+                    background: $primary;
+                }
+            }
+        }
+    }
+
 }

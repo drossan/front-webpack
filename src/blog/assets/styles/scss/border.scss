@@ -1,4 +1,10 @@
 .border {
+    &--top{
+        border-top: 1px solid #000;
+        &-2-5{
+            border-top: 2.5px solid;
+        }
+    }
     &--left {
         border-left: 1px solid #000;
     }
@@ -10,6 +16,10 @@
     }
     &--1 {
         border: .5px solid;
+    }
+
+    &--primary{
+        border-color: $primary 
     }
     &--white {
         border-color: white;

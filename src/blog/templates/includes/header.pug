@@ -1,6 +1,28 @@
-header.header.navbar.navbar-expand-lg.p-sm-4.bg--dark
+
+nav.nav-fixed-desktop.navbar.navbar-expand-sm.main-nav.py-4.border--bottom.d-none.d-md-flex
+	.container.justify-content-center
+		ul.nav.navbar-nav.flex-fill.w-100.flex-nowrap.justify-content-around
+			li.nav-item.active
+				a.nav-link(href='#') Contenidos
+			li.nav-item
+				a.nav-link(href='#') Noticias
+			li.nav-item
+				a.nav-link(href='#') Vídeos
+		ul.nav.navbar-nav.flex-fill.justify-content-center
+			li.nav-item
+				a.nav-link(href='/') 
+					img#logo.img-fluid(src='https://www.revistaantropika.com/assets/images/logo.svg', alt="")
+		ul.nav.navbar-nav.flex-fill.w-100.justify-content-around
+			li.nav-item
+				a.nav-link(href='#') ¿Quiénes somos?
+			li.nav-item
+				a.nav-link(href='#') Revista
+			li.nav-item
+				a.nav-link(href='#') Contacto
+
+header.header.navbar.navbar-expand-lg.p-sm-4.d-flex.d-md-none
 	a.navbar-brand.p-sm-2(href='/')
-		img.img-fluid(src='https://www.revistaantropika.com/assets/images/logo.svg', alt="COVA D'EN XOROI", width='50px')
+		img.img-fluid(src='https://www.revistaantropika.com/assets/images/logo.svg', alt="", width='50px')
 	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
 		span.navbar-toggler-icon.text--white
 		p.text.text--12.text--semibold.text--white MENÚ
@@ -9,14 +31,14 @@ header.header.navbar.navbar-expand-lg.p-sm-4.bg--dark
 			li.nav-item.dropdown.px-3.d-flex.align-items-center(class="")
 				a#navbarDropdown.nav-link.text.dropdown-toggle.order-2(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') CONTENIDOS
 				.dropdown-menu(aria-labelledby='navbarDropdown')
-					a.text.text--white.text--12.dropdown-item.active(href='#') TODOS
-					a.text.text--white.text--12.dropdown-item(href='#') OPINIÓN
-					a.text.text--white.text--12.dropdown-item(href='#') CINE
+					a.text.text--12.dropdown-item.active(href='#') TODOS
+					a.text.text--12.dropdown-item(href='#') OPINIÓN
+					a.text.text--12.dropdown-item(href='#') CINE
 			li.nav-item.px-3(class="")
-				a.nav-link.text.text--12.text--white.text--semibold(href='') NOTICIAS
+				a.nav-link.text.text--12.text--semibold(href='') NOTICIAS
 			li.nav-item.px-3(class="")
-				a.nav-link.text.text--12.text--white.text--semibold(href='') VÍDEOS
+				a.nav-link.text.text--12.text--semibold(href='') VÍDEOS
 			li.nav-item.px-3(class="")
-				a.nav-link.text.text--12.text--white.text--semibold(href='') NOSOTROS
+				a.nav-link.text.text--12.text--semibold(href='') NOSOTROS
 			li.nav-item.px-3(class="")
-				a.nav-link.text.text--12.text--white.text--semibold(href='') REVISTA
+				a.nav-link.text.text--12.text--semibold(href='') REVISTA
