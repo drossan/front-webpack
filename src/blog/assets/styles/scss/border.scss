@@ -1,18 +1,18 @@
 .border {
     &--top{
-        border-top: 1px solid #000;
+        border-top: 1px solid $black;
         &-2-5{
             border-top: 2.5px solid;
         }
     }
     &--left {
-        border-left: 1px solid #000;
+        border-left: 1px solid $black;
     }
     &--right {
-        border-right: 1px solid #000;
+        border-right: 1px solid $black;
     }
     &--bottom {
-        border-bottom: .5px solid #000;
+        border-bottom: .5px solid  $black;
     }
     &--1 {
         border: .5px solid;
@@ -26,10 +26,10 @@
     }
 
     &--white {
-        border-color: white;
+        border-color: $white;
     }
     &--black {
-        border-color: black!important;
+        border-color: $black!important;
     }
-    @include borders(map-keys($colors-app)...);
 }
+@include borders(map-keys($colors-app)...);

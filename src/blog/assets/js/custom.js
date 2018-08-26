@@ -17,8 +17,11 @@ $(function() {
     // Para header 2
     var offset2 = 150;
     $(window).scroll( () =>  $(this).scrollTop() > offset2 
-    ? $('.header-fixed').addClass('header-fixed--top') 
-    : $('.header-fixed').removeClass('header-fixed--top') 
-);
-    
+        ? $('.header-fixed').addClass('header-fixed--top') 
+        : $('.header-fixed').removeClass('header-fixed--top') 
+    );
+    $('#search').click( (e)=> {
+        e.preventDefault()
+        $('.header--search').toggleClass('header--search-inline');
+    })
 })

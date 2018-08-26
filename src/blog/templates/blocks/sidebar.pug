@@ -1,7 +1,8 @@
 .row.pl-0.pl-md-5.pt-5
   .col-12.p-0
-    input.form-control.form-search.text.text--12(placeholder='Search...', required='', type='text')
-  .col-12.p-0.pt-5
+    if search
+      input.form-control.form-search.text.text--12(placeholder='Search...', required='', type='text')
+  .col-12.p-0(class=search ? 'pt-5' : '')
     .card.border--top-primary.text--cursor.h-100
       .card-header.px-5.px-md-2
         .position-relative.w-100.card--img.px-4.mt-2

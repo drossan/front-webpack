@@ -1,7 +1,7 @@
 .nav-fixed-desktop{
     position: fixed;
     width: 100%;
-    background: linear-gradient(90deg, #11f1dfcc 10%, #3f51b58f 90%);
+    background: linear-gradient(90deg, map-get($colors-app, primary) 10%,  map-get($colors-app, second) 90%);
     // background: #ffffff75;
     z-index: 99;
     #logo {
@@ -13,7 +13,7 @@
         font-weight: 400;
     }
     &--reduce{
-        background-color: #fff;
+        background-color: $white;
         padding-top: .5rem !important;
         padding-bottom: .5rem !important;
         #logo {
@@ -23,8 +23,7 @@
     }
 }
 .header {
-
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black;
     position: relative;
     &.navbar {
         padding: 0.5rem;
@@ -60,8 +59,22 @@
             right: 0px;
             width: 100%;
             z-index: 1;
-            background: #fff;
+            background: $white;
             min-height: 100vh;
+        }
+    }
+    &--search{
+        display: none;
+        top: 100%;
+        right: 0;
+        max-width: 300px;
+        width: 300px;
+        margin-top: 4px;
+        background: $dark;
+        color: $white;
+        &-inline{
+            position: absolute;
+            display: inline-block;
         }
     }
     &-fixed{
@@ -71,6 +84,7 @@
             width: 100%;
             z-index: 99;
         }
+        
         #navbarText {
             .nav-item {
                 height: 60px;
@@ -85,7 +99,7 @@
                 }
                 &.active,
                 &:hover{
-                    background: $primary;
+                    background: map-get($colors-app, primary);
                 }
             }
         }

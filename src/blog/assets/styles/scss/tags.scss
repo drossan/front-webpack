@@ -4,9 +4,6 @@
     font-size: 12px;
     font-weight: 900;
     line-height: 35px;
-    &--primary {
-        background: $primary;
-    }
     &--top {
         &-inherit {
             top: inherit !important;
@@ -17,3 +14,5 @@
         transform: translate(0, 0)!important;
     }
 }
+
+@include tags(map-keys($colors-app)...);

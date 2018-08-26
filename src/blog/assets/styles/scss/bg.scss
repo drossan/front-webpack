@@ -6,7 +6,6 @@
     &--dark {
         background: $dark;
     }
-    @include bg(map-keys($colors-app)...);
     &--cover {
         background: linear-gradient(90deg, rgba(17, 241, 223, 0.15) 10%, rgba(63, 81, 181, 0.15) 90%);
         width: 100vw;
@@ -19,20 +18,21 @@
             height: 100vh;
             > i {
                 font-size: 5em;
-                color: white;
+                color: $white;
                 position: absolute;
                 bottom: 15px;
                 left: 50%;
                 transform: translate(-50%, 0);
                 cursor: pointer;
 
-                border: 2px solid #11f1dfcc;
+                border: 2px solid map-get($colors-app, second);
                 padding: 6px 15px;
                 border-radius: 50%;
-                background: linear-gradient(0deg, $primary 10%, $second 90%);
+                background: linear-gradient(90deg, map-get($colors-app, primary) 10%,  map-get($colors-app, second) 90%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
     }
 }
+@include bg(map-keys($colors-app)...);
