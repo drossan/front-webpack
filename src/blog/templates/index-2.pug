@@ -2,14 +2,14 @@ extends ./../../_common/base-pug/base
 block append config
   - page_title = self.htmlWebpackPlugin.options.title;;
   - page = "Test";
-  - search = false
+  - search = true
   include ./mixins/mixins
 block append head
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css')
   link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
 
 block body
-  include ./includes/header-2
-  include ./layouts/index-2
+  include ./includes/header
+  include ./layouts/index
 block footer
-  include ./includes/footer-2
+  include ./includes/footer
