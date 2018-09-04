@@ -33,4 +33,29 @@
             }
         }
     }
+    &--text {
+        &-top,
+        &-bottom{
+            position: absolute;
+        }
+        &-top{
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            > .tag {
+                position: relative;
+            }
+        }
+        &-bottom {
+            bottom: 5%;
+            left: 5%;
+            transform: translate(-5%, -5%);
+        }
+    }
 }

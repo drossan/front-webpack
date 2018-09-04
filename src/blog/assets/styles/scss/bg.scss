@@ -36,6 +36,18 @@
                 -webkit-text-fill-color: transparent;
             }
         }
+        &-black {
+            background: black;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            left: 0;
+            opacity: .3;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
     }
 }
 @include bg(map-keys($colors-app)...);
