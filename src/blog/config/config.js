@@ -8,7 +8,7 @@ const entry = {
 // Punto de salida
 const output = {
     path: path.resolve(__dirname, './../../../dist'),
-    filename: 'assets/js/[name].min.js'
+    filename: 'assets/js/[name].[contenthash].min.js'
 };
 
 // Id de GA

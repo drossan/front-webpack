@@ -14,12 +14,39 @@ $(function() {
     })
 
 
-    // Para header 2
-    var offset2 = 150;
-    $(window).scroll( () =>  $(this).scrollTop() > offset2 
-        ? $('.header-fixed').addClass('header-fixed--top') 
-        : $('.header-fixed').removeClass('header-fixed--top') 
-    );
+    // Para header && footer 2 + buttom return top
+    var offset = 250, scrollDuration = 300;
+    $(window).on("scroll", () => {
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        
+        if ((scrollHeight - scrollPosition) / scrollHeight * 100 === 0 && $('.footer-fixed').hasClass('footer-fixed--bottom')) {
+            $('.footer-fixed').removeClass('footer-fixed--bottom') 
+        }else{
+            if((scrollHeight - scrollPosition) / scrollHeight * 100 > 5 && !$('footer').hasClass('footer-fixed--bottom')){
+                $('.footer-fixed').addClass('footer-fixed--bottom') 
+            }
+        }
+
+        if ($(this).scrollTop() > offset) {
+            $('.top').fadeIn(500);
+            $('.header-fixed').addClass('header-fixed--top') 
+        } else {
+            $('.top').fadeOut(500);
+            $('.header-fixed').removeClass('header-fixed--top') 
+            $('.footer-fixed').removeClass('footer-fixed--bottom') 
+        }
+
+    })
+
+    $('.top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, scrollDuration);
+    });
+    
+    
     $('#search').click( (e)=> {
         e.preventDefault()
         $('.header--search').toggleClass('header--search-inline');

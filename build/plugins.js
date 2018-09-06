@@ -13,7 +13,7 @@ const _FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const _DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
 
 const MiniCssExtractPlugin = new _MiniCssExtractPlugin({
-    filename: 'assets/css/[name].min.css'
+    filename: 'assets/css/[name].[contenthash].min.css'
 });
 
 const UglifyJsPlugin = new _UglifyJsPlugin({
