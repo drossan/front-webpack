@@ -1,5 +1,5 @@
 $(function() {
-    var offset = 250;
+    var offset = 250, scrollDuration = 300;
 
     // Para header index.html
     $(window).scroll( () =>  $(this).scrollTop() > offset 
@@ -15,15 +15,14 @@ $(function() {
 
 
     // Para header && footer 2 + buttom return top
-    var offset = 250, scrollDuration = 300;
     $(window).on("scroll", () => {
         var scrollHeight = $(document).height();
         var scrollPosition = $(window).height() + $(window).scrollTop();
-        
-        if ((scrollHeight - scrollPosition) / scrollHeight * 100 === 0 && $('.footer-fixed').hasClass('footer-fixed--bottom')) {
+        console.log((scrollHeight - scrollPosition) / scrollHeight * 100)
+        if ((scrollHeight - scrollPosition) / scrollHeight * 100 < 5 && $('.footer-fixed').hasClass('footer-fixed--bottom')) {
             $('.footer-fixed').removeClass('footer-fixed--bottom') 
         }else{
-            if((scrollHeight - scrollPosition) / scrollHeight * 100 > 5 && !$('footer').hasClass('footer-fixed--bottom')){
+            if((scrollHeight - scrollPosition) / scrollHeight * 100 > 10 && !$('footer').hasClass('footer-fixed--bottom')){
                 $('.footer-fixed').addClass('footer-fixed--bottom') 
             }
         }

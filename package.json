@@ -5,8 +5,9 @@
     "main": "webpack.config.js",
     "scripts": {
         "start": "webpack-dev-server --mode development --open --config build/webpack.config.js",
-        "build": "webpack --mode production --config build/webpack.config.js",
-        "new": "node build/new.js"
+        "build": "npm run clean && webpack --mode production --config build/webpack.config.js",
+        "new": "node build/new.js",
+        "clean": "rimraf \"./dist/*\""
     },
     "bin": {
         "new": "build/new.js"
