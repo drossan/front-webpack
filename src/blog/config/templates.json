@@ -5,8 +5,8 @@
     "title": "Index"
 },
 {
-    "template": "index-2.pug",
-    "filename": "./index-2.html",
+    "template": "post.pug",
+    "filename": "./post.html",
     "inject": true,
-    "title": "Index"
+    "title": "Entrada || Nombre página"
 }]

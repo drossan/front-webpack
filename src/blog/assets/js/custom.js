@@ -18,7 +18,7 @@ $(function() {
     $(window).on("scroll", () => {
         var scrollHeight = $(document).height();
         var scrollPosition = $(window).height() + $(window).scrollTop();
-        console.log((scrollHeight - scrollPosition) / scrollHeight * 100)
+
         if ((scrollHeight - scrollPosition) / scrollHeight * 100 < 5 && $('.footer-fixed').hasClass('footer-fixed--bottom')) {
             $('.footer-fixed').removeClass('footer-fixed--bottom') 
         }else{

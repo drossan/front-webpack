@@ -34,3 +34,10 @@
         opacity: .8;
     }
 }
+
+.perfil {
+    &--content {
+        width: 150px;
+        height: 150px;
+    }
+}
