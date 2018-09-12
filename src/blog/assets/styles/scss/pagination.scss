@@ -1,0 +1,10 @@
+.pagination {
+    &--content {
+        cursor: pointer;
+        &:hover {
+            .pagination--text {
+                color: $primary;
+            }
+        }
+    }
+}

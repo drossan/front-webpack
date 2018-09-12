@@ -16,6 +16,9 @@
     &--round{
         border-radius: 5px!important;
     }
+    &--transparent {
+        background-color: transparent;
+    }
 }
 
 @include tags(map-keys($colors-app)...);
