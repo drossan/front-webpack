@@ -22,7 +22,7 @@
         a.nav-link.active.text.text--20(data-toggle='tab', href='#entradas-populares') Entradas populares
       li.nav-item
         a.nav-link.text.text--20(data-toggle='tab', href='#entradas-recientes') Entradas recientes
-    .tab-content
+    .tab-content.p--1
       #entradas-populares.tab-pane.container.active
         .row.my-2.bg--white
           .col-6.px-0
@@ -85,12 +85,28 @@
   .col-12.p-0.pt-2
     .col-12
       +title-card('breadcrumb', 'gray', [{title: 'Etiquetas', active: true}])
-    .col-12.bg--white.p-5.d-flex.align-items-center.flex-wrap
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Cine
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Música
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Fotografía
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Pintura
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Danza
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Taller
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Deporte
-        a.text.tag.tag--round.tag--transparent.border.border--gray.text--gray.text--light.mr-3.my-2.py-0(href="") Otros
+    .col-12.bg--white.p-4.d-flex.align-items-center.flex-wrap.tag--content
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags
+          | Cine
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags 
+          | Música
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags 
+          | Fotografía
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags 
+          | Pintura
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags 
+          | Danza
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags 
+          | Taller
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags 
+          | Deporte
+        a.text.tag.tag--round.tag--transparent.border--1.border--gray.text--gray.text--light.mr-2.my-1.py-0(href="") 
+          i.fas.fa-tags 
+          | Otros
