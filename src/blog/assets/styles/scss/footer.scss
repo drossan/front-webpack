@@ -21,4 +21,26 @@
         }
 
     }
+
+    &--nav {
+        text-align: center;
+        .nav-item {
+            > i {
+                display: none;
+            }
+            .nav-link {
+                border-bottom: none!important;
+                padding: 0;
+            }
+            &.active {
+                > i {
+                    color: $primary;
+                    @media (max-width: 576px){
+                    display: inline-block;
+                    }
+                }
+            }
+        }
+
+    }
 }

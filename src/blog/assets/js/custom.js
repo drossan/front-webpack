@@ -50,4 +50,13 @@ $(function() {
         e.preventDefault()
         $('.header--search').toggleClass('header--search-inline');
     })
+
+
+    $('.footer--nav .nav-item').click( function(e) {
+        e.preventDefault()
+        $('.footer--nav .nav-item').each( function() {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+    })
 })
