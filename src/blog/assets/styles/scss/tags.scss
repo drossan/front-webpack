@@ -4,6 +4,21 @@
     font-size: 12px;
     font-weight: 900;
     line-height: 35px;
+
+    &--content{
+        .tag{
+            &:hover{
+
+                border-color: $primary;
+                color: $primary;
+            }
+            i {
+                transform: rotate(136deg);
+                margin-right: 5px;
+                padding-bottom: 2px;
+            }
+        }
+    }
     &--top {
         &-inherit {
             top: inherit !important;
