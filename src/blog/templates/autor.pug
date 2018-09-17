@@ -1,0 +1,13 @@
+extends ./../../_common/base-pug/base
+block append config
+  - page_title = self.htmlWebpackPlugin.options.title;;
+  - page = "Autor";
+  - search = false
+  include ./mixins/mixins
+block append head
+  include ./includes/head
+block body
+  include ./includes/header-2
+  include ./layouts/autor
+block footer
+  include ./includes/footer-2

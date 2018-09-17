@@ -9,4 +9,16 @@
     "filename": "./post.html",
     "inject": true,
     "title": "Entrada || Nombre página"
+},
+{
+    "template": "autor.pug",
+    "filename": "./autor.html",
+    "inject": true,
+    "title": "Autor || Nombre página"
+},
+{
+    "template": "equipo.pug",
+    "filename": "./equipo.html",
+    "inject": true,
+    "title": "Equipo || Nombre página"
 }]
