@@ -45,7 +45,7 @@
         "import-glob-loader": "^1.1.0",
         "json-loader": "^0.5.7",
         "mini-css-extract-plugin": "^0.4.1",
-        "node-sass": "^4.9.2",
+        "node-sass": "^4.13.1",
         "optimize-css-assets-webpack-plugin": "^5.0.0",
         "postcss": "^7.0.2",
         "postcss-cssnext": "^3.1.0",
